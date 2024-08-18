@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: #222121;
+}
+
+nav{
+    width: 100%;
+    animation: fadeInDown 0.5s ease forwards;
+}
+
+.navitens{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo{
+    color: #fff;
+    font-weight: 300px;
+    font-style: italic;
+    margin-left: 1.5em;
+}
+
+.purple-logo{
+    color: rgb(120, 40, 224);
+}
+
+.nav-logo h1{
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.nav-logo h1:hover{
+    text-shadow: 1px 2px 8px #fff;
+}
+
+.nav-links{
+    transition: all 0.3s ease;
+}
+
+.nav-links:hover{
+    scale: 1.1;
+}
+
+.nav-links ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 1.7em;
+    gap: 2em;
+}
+
+.nav-links ul li{
+    list-style: none;
+    margin-right: 1em;
+}
+
+.nav-links ul li a{
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+}
+
+.nav-links ul li a::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(54, 54, 189);
+    transition: all 0.3s ease;
+}
+
+.nav-links ul li a:hover::after{
+    width: 100%;
+}
+
+.nav-button{
+    margin-right: 2em;
+}
+
+.nav-button button{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(120, 40, 224);
+    color: #fff;
+    width: 5em;
+    height: 2em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-button button:hover{
+    background-color: rgb(78, 8, 168);
+}
+
+.portifolio-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInDown 0.5s ease forwards;
+    
+}
+
+.portfolio-card{
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50em;
+    height: 20em;
+    gap: 1em;
+    background-color: #0c0c0c;
+    border-radius: 20px;
+    box-shadow: 1px 5px 4px #0c0c0c;
+}
+
+.portfolio-img{
+    margin-left: 3.5em;
+    user-select: none;
+}
+
+.portfolio-img img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    outline: 2px solid #202020;
+    transition: all 0.3s ease;
+}
+
+.portfolio-img img:hover{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    outline: 2px solid #8d30ca;
+    transition: all 0.5s ease;
+}
+
+.portifolio-items{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-right: 4em;
+}
+
+.professional-name{
+    max-height: 3.5em;
+}
+
+.professional-name h1{
+    color: #fff;
+    font-weight: 300;
+}
+
+.description{
+    max-width: 25em;
+}
+
+.description p{
+    color: #acacac;
+}
+
+.hire-button button{
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(120, 40, 224);
+    color: #fff;
+    width: 6em;
+    height: 3em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hire-button button:hover{
+    background-color: rgb(78, 8, 168);
+}
+
+@media (width < 900px){
+    .portfolio-card{
+        width: 40em;
+        gap: 5em;
+    }
+    .description{
+        max-width: 29em;
+    }
+}
+
+@media (width < 600px){
+    .portfolio-card{
+        margin-top: 2em;
+        flex-direction: column;
+        width: 25em;
+        height: 35em;
+        gap: 1em;
+    }
+    .portfolio-img{
+        margin-left: 0;
+        margin-top: 3em;
+    }
+    .portifolio-items{
+        margin-right: 0;
+        margin-bottom: 3em;
+    }
+    .description{
+        max-width: 20em;
+    }
+    .nav-links{
+        display: none;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
