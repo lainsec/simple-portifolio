@@ -6,3 +6,10 @@
 > - **1**._Sofisticated animations._
 > - **2**._Responsive layout for mobile viewers._
 > - **3**._Easy to change the information and simple to analyze._
+###
+# Instalation:
+```
+git clone https://github.com/lainsec/simple-portifolio
+cd simple-portifolio
+```
+
